@@ -1,6 +1,6 @@
 {
   "name": "cache-chain-memory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Memory backend to cache-chain",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/akayami/cache-chain-memory#readme",
   "devDependencies": {
     "async": "^1.5.0",
-    "cache-chain": "0.0.1",
+    "cache-chain": "0.0.2",
     "mocha": "^2.3.4"
   },
   "dependencies": {
