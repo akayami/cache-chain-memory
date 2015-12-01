@@ -10,6 +10,9 @@ module.exports = function(option) {
 		var store = {}; // Maps quickly to data
 
 		this.set = function(key, value, options, cb) {
+			if(store[key]) {
+				clearTimeout(store[key].timeout);
+			}
 			store[key] = {
 				v: value,
 				timeout: setTimeout(function() {
