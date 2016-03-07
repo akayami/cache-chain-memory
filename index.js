@@ -1,5 +1,5 @@
 var merge = require('merge');
-
+var cacheChain = require('../cache-chain');
 module.exports = function(option) {
 
 	function backend(option) {
@@ -30,7 +30,8 @@ module.exports = function(option) {
 				cb(null, store[key].v);
 				stack.unshift(stack.pop());
 			} else {
-				cb(new Error('Key not found'));
+				cb(new cacheChain.error.notFound);
+//				cb(new Error('Key not found'));
 			}
 		};
 
