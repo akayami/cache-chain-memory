@@ -1,5 +1,5 @@
 var merge = require('merge');
-var cacheChain = require('../cache-chain');
+var cacheChain = require('cache-chain');
 module.exports = function(option) {
 
 	function backend(option) {

@@ -1,11 +1,11 @@
-var cc = require('../../cache-chain');
+var cc = require('cache-chain');
 var async = require('async');
 
 describe('Main Tests for cache-chain-memory', function() {
 
 	var di = {
 		chain: null,
-		cc: require('../../cache-chain')
+		cc: require('cache-chain')
 	}
 
 	var chain;
@@ -22,7 +22,7 @@ describe('Main Tests for cache-chain-memory', function() {
 		done();
 	});
 
-	require('../../cache-chain/test/integration')(di);
+	require('cache-chain/test/integration')(di);
 
 	describe('Memcached Specific Tests', function() {
 		it('Has to respect memory store depth', function(done) {
