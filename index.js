@@ -25,7 +25,7 @@ module.exports = function(option) {
 			resize();
 		};
 
-		this.get = function(key, options, cb) {
+		this.get = function(key, options, cb) {			
 			if (store[key]) {
 				cb(null, store[key].v);
 				stack.unshift(stack.pop());

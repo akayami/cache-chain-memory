@@ -1,6 +1,6 @@
 {
   "name": "cache-chain-memory",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Memory backend to cache-chain",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "merge": "^1.2.0",
-	"cache-chain": "0.0.3"
+	"cache-chain": "0.0.4"
   }
 }
